@@ -81,20 +81,26 @@ img{
     font-size: small;
 }
 
-
-
-main{
-    height: 400px;    
+main{     
     background-color: #0286fa;    
 }
 
 main .row.top{
     background-color: #abcfe7;
-    height: 10%;
+   
+}
+
+main .row.top .title{
+    font-weight: 900;
+    font-size: 40px;
+}
+
+main .row.top .subtitle{
+    color: #858585;
 }
 
 main .row.bottom{
-    height: 80%; 
+    height: 500px; 
 }
 
 
@@ -108,17 +114,32 @@ main .row.bottom{
 .column.center{
     width: 50%;
     margin: 0 2%;
+    background-image: url("../img/banner-2.jpg");
+    position: relative;
 }
 
 .column.left, .column.right{
+    position: relative;
     width: 23%;
 }
 
+.column.left{
+    background-image: url("../img/img-1.jpg");
+}
 
-.main .row.bottom:after {
+.column.right{
+    background-image: url("../img/img-3.jpg");
+}
+
+.clearfix:after {
     content: "";
     display: table;
     clear: both;
+
+}
+
+.clearfix{
+    height: 100%;
 }
   
 
