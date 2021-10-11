@@ -1,4 +1,5 @@
 /* RESET */
+
 *{
     margin: 0;
     padding: 0;
@@ -6,6 +7,7 @@
 }
 
 /* COMMON */
+
 body{
     font-family: "Montserrat";
 }
@@ -15,39 +17,15 @@ body{
     margin: 2% auto;
 }
 
-.row{
-    margin: 20px 0;
-}
-
-/*LOGO*/
 img{
     width: 100%;
 }
 
-.logo{
-    height: auto;
-    width: 150px;
+.row{
+    margin: 30px 0;
 }
 
-/*MENU*/
-.menu{
-    list-style-type: none;
-}
-
-.menu li{
-    display: inline-block;
-}
-
-.menu a{
-    text-decoration: none;
-    padding-right: 15px;
-    color: #858585;
-}
-
-/*BANNER*/
-.banner{
-    height: 350px;
-    background-image: url("../img/banner.jpg");
+.banner{  
     background-position: center;
     background-size: cover;
     position: relative;
@@ -64,91 +42,129 @@ img{
     background-color: rgba(0, 0, 0, 0.2);
 }
 
-.banner .text{
-    position: absolute;
-    bottom: 40px;
-    left: 40px;
-    color: white;
-    width: 50%;
+.title{
+    color: black;
+    font-weight: bolder;
 }
 
-.text .title{
-    font-size: x-large;
-    font-weight: 600;
-}
-
-.text .subtitle{
-    font-size: small;
-}
-
-main{     
-    background-color: #0286fa;    
-}
-
-main .row.top{
-    background-color: #abcfe7;
-   
-}
-
-main .row.top .title{
-    font-weight: 900;
-    font-size: 40px;
-}
-
-main .row.top .subtitle{
+.subtitle{
     color: #858585;
 }
 
-main .row.bottom{
-    height: 500px; 
+
+/*HEADER*/
+
+/*Logo*/
+
+.logo{
+    height: auto;
+    width: 150px;
 }
 
+/*Menu*/
 
-.column{
-    float: left;
-    background-color: #abcfe7;
-    height: 100%;
+.menu{
+    list-style-type: none;
+}
+
+.menu li{
+    display: inline-block;
+}
+
+.menu a{
+    text-decoration: none;
+    padding-right: 15px;
+    color: #858585;
+}
+
+/*Banner*/
+
+header .banner{
+    height: 350px;
+    background-image: url("../img/banner.jpg");
     
 }
 
-.column.center{
+.banner .text {
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
     width: 50%;
-    margin: 0 2%;
-    background-image: url("../img/banner-2.jpg");
-    position: relative;
 }
 
-.column.left, .column.right{
-    position: relative;
-    width: 23%;
+.banner .text .title{
+    font-size: x-large;
+    font-weight: 600;  
 }
 
-.column.left{
-    background-image: url("../img/img-1.jpg");
+.banner .text .subtitle{
+    font-size: small;
 }
 
-.column.right{
-    background-image: url("../img/img-3.jpg");
+.banner .text .title, .banner .text .subtitle{
+    color: white;
+}
+
+
+/*MAIN*/
+
+main .row.top .title{
+    text-shadow: 0px 1px, 1px 0px, 1px 0px;
+    font-size: 30px;
+}
+
+main .row.top .subtitle{
+    font-size: 15px;
 }
 
 .clearfix:after {
     content: "";
     display: table;
     clear: both;
-
 }
 
-.clearfix{
+.column{
+    float: left;    
+    position: relative;
     height: 100%;
+    background-position: center;
+    background-size: cover;  
 }
-  
 
-footer{
-    margin-top: -10px;
+.column.left, .column.right{
+    width: 23%;
 }
+
+.column.center{
+    width: 50%;
+    margin: 0 2%;
+}
+
+main .banner{
+    height: 150px;
+}
+
+.banner.column.left{
+    background-image: url("../img/img-1.jpg");
+}
+
+.banner.column.right{
+    background-image: url("../img/img-3.jpg");
+}
+
+.banner.column.center{
+    background-image: url("../img/banner-2.jpg");
+}
+
+
+/*FOOTER*/
 
 footer .row{
-    background-color:purple;
     width: ;
     height: 30px;
+    text-align: center;
+}
+
+.heart{
+    color: red;
 }
